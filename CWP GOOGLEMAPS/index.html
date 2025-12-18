@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map Project</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="script.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHxtGcTBuMXZ3TdvWzdI-ikHsipMAKsqI&callback=initMap"
+        async defer></script>
+    </head>
+ <body>
+        <div id='main'>
+            <h1>College Directions</h1>
+            <select id="college">
+              <option disabled selected value> -- select a college -- </option>
+              <option value="University of Washington">UW</option>
+              <option value="University of Washington Bothell">UW Bothell</option>
+              <option value="Seattle University">Seattle U</option>
+              <option value="North Seattle Community College">North Seattle</option>
+              <option value="Bellevue College">Bellevue College</option>
+              <option value="Seattle Pacific University">SPU</option>
+              <option value="Western Washington University">WWU</option>
+            </select>
+           <select id="mode">
+              <option disabled selected value> -- select travel mode -- </option>
+              <option value="DRIVING">Driving</option>
+              <option value="WALKING">Walking</option>
+              <option value="BICYCLING">Biking</option>
+              <option value="TRANSIT">Transit</option>
+            </select>
+            <button id="get-directions">Get Directions</button>
+            <br/>
+            <div id="map"></div>
+            <div id="directions"></div>
+        </div>
+       
+    </body>
+</html>

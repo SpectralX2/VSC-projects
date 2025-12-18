@@ -1,0 +1,6 @@
+.venv
+*.zip
+*.gif
+images
+*.png
+__pycache__
