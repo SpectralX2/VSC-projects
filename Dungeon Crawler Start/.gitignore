@@ -1,6 +1,5 @@
 .venv
-*.zip
-*.gif
-images
-*.png
 __pycache__
+.vscode
+*.gif
+*.db
